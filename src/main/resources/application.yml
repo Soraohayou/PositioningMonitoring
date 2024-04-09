@@ -1,0 +1,18 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/PositioningMonitoring?useUnicode=true & characterEncoding=utf-8 & useSSL=true & serverTimezone=Asia/Shanghai
+    username: root
+    password: admin123456
+
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml
+  type-aliases-package: com.soraohayou.positioningmonitoring.entity
+
+  # 设置 MyBatis 日志级别为 DEBUG
+logging:
+  level:
+    com.example.mapper: DEBUG
