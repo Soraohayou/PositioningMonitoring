@@ -20,7 +20,7 @@ public class UserController {
     private UserService userService;
 
     @PostMapping("/getAllUser")
-    public List<User> getUser() {
+    public List<User> getAllUser() {
         return userService.getUserListByCondition(new HashMap<>());
     }
 
