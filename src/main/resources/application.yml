@@ -8,7 +8,7 @@ spring:
     username: root
     password: admin123456
   thymeleaf:
-    cache: false
+    cache: true
     prefix: classpath:/templates/
     suffix: .html
     encoding: UTF-8
@@ -22,3 +22,4 @@ mybatis:
 logging:
   level:
     com.example.mapper: DEBUG
+
